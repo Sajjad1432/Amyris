@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="theme-default">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Amyris - Main Dashboard</title>
+
+
+    <link type="text/css" href="assets/css/themes/default/vendor-fullcalendar.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/default/vendor-weathericons.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/default/vendor-bootstrap-datepicker.css" rel="stylesheet">
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <!-- Simplebar -->
+    <link type="text/css" href="assets/vendor/simplebar.css" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/themes/default/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="d-flex flex-column position-relative h-100">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary d-print-none">
+            <a class="navbar-brand" href="index.html">
+                <span class="navbar-brand-text"><img src="./assets//images/logo.png" width="120px" /></span>
+            </a>
+         
+            <!-- END DEMO  COLORS -->
+            <button class="navbar-toggler navbar-toggler-right d-md-none d-lg-none" type="button" data-toggle="sidebar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item dropdown nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle dropdown-clear-caret" data-toggle="dropdown" aria-expanded="false">
+          Dashboard <img src="assets/images/avatars/andrew-robles-300868.jpg" class="img-fluid rounded-circle ml-1" width="35" alt="">
+        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-account">
+                            <div class="account-info">
+                                <img src="assets/images/avatars/andrew-robles-300868.jpg" class="img-fluid rounded-circle mr-2" width="45" alt="">
+                                <div class="lh-12">
+                                    <a href="profile.html"><strong>Amyris</strong></a>
+                                    <div class="text-light">Executive Dashboard</div>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled account-menu">
+                                <li><a href="account.html" class="dropdown-item "><i class="material-icons md-18 align-middle mr-1">lock</i> <span class="align-middle">Account</span></a></li>
+                                <li><a href="profile.html" class="dropdown-item "><i class="material-icons md-18 align-middle mr-1">account_circle</i> <span class="align-middle">Profile</span></a></li>
+                                <li><a href="#" class="dropdown-item"><i class="material-icons md-18 align-middle mr-1">settings</i> <span class="align-middle">Settings</span></a></li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                <i class="material-icons md-18 align-middle mr-1">build</i>
+                <span class="align-middle">Support</span>
+              </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                <i class="material-icons md-18 align-middle mr-1">question_answer</i>
+                <span class="align-middle">FAQ</span>
+              </a>
+                                </li>
+                                <li><a href="login.html" class="dropdown-item"><i class="material-icons md-18 align-middle mr-1">exit_to_app</i> <span class="align-middle">Logout</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="mdk-drawer-layout js-mdk-drawer-layout" data-fullbleed data-push data-has-scrolling-region>
+            <div class="mdk-drawer-layout__content mdk-header-layout__content--scrollable">
+                <!-- CONTENT BODY -->
+
+                <div class="container-fluid">
+                   <div class="card-deck">
+                        <div class="card p-2 pl-3 pr-3">
+                            <div class="media align-items-center">
+                                <div class="doughnut-chart-wrapper mr-1">
+                                    <div class="doughnut-chart-text">
+                                        <div>
+                                            <h3 class="text-danger">12%</h3>
+                                            <small>TODAY</small>
+                                        </div>
+                                    </div>
+                                    <canvas class="doughnut-chart" data-percent="12" width="100" height="100"></canvas>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mb-0">$11,020</h3>
+                                    <span>Total Revenue</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-2 pl-3 pr-3">
+                            <div class="media align-items-center">
+                                <div class="doughnut-chart-wrapper mr-1">
+                                    <div class="doughnut-chart-text">
+                                        <div>
+                                            <h3 class="text-success">68%</h3>
+                                            <small>MONTH</small>
+                                        </div>
+                                    </div>
+                                    <canvas class="doughnut-chart" data-percent="68" width="100" height="100"></canvas>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mb-0">$6,670</h3>
+                                    <span>Net Profit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-2 pl-3 pr-3">
+
+                            <div class="media justify-items-center align-items-center h-md-100">
+                                <i class="material-icons md-48 text-link-color">account_circle</i>
+                                <div class="media-body pl-2">
+                                    <h3 class="mb-0 text">87</h3>
+                                    <span>No. of products sold</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="card p-2 pl-3 pr-3">
+                            
+                            <div class="media justify-items-center align-items-center h-md-100">
+                                <div class="doughnut-chart-wrapper mr-1">
+                                    <div class="doughnut-chart-text">
+                                        <div>
+                                            <h3 class="text-success">7%</h3>
+                                            <small>MONTH</small>
+                                        </div>
+                                    </div>
+                                    <canvas class="doughnut-chart" data-percent="68" width="100" height="100"></canvas>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mb-0">$1070</h3>
+                                    <span>Returns</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card card-sales">
+                                <div class="card-header bg-faded">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <h4 class="card-title">Sales</h4>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <form class="form-inline float-right">
+                                                <div class="form-group mr-3">
+                                                    <label class="control-label mr-1">From:</label>
+                                                    <input type="text" class="datepicker form-control" value="10/24/2017">
+                                                </div>
+                                                <div class="form-group mb-0">
+                                                    <label class="control-label mr-1">To: </label>
+                                                    <input type="text" class="datepicker form-control" value="10/25/2017">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="clearfix"></div>
+                                    <div style="height: 250px; width: 100%;">
+                                        <canvas id="dashboard-chart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">
+                                        History - Clicks/Revenue
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="d-flex justify-content-between pb-1">
+                                        <span>January</span>
+                                        <div>
+                                            <strong>10,00,000</strong> <span>/ $20,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 52%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pb-1">
+                                        <span>February</span>
+                                        <div>
+                                            <strong>15,00,000</strong> <span>/ $10,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pb-1">
+                                        <span>March</span>
+                                        <div>
+                                            <strong>1,00,000</strong> <span>/ $2,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 22%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pb-1">
+                                        <span>April</span>
+                                        <div>
+                                            <strong>800,000</strong> <span>/ $11,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pb-1">
+                                        <span>May</span>
+                                        <div>
+                                            <strong>400,000</strong> <span>/ $5,500</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h4 class="card-title">
+                                            Users Traffic
+                                        </h4>
+                                        <div class="badge badge-warning align-self-middle">ROI: +48,6%</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div style="height: 210px; width: 100%;">
+                                        <canvas id="members-chart"></canvas>
+                                    </div>
+                                </div>
+                                <div class="card-group">
+                                    <div class="card card-body text-center">
+                                        <h3 class="mb-0">1,215,019</h3>
+                                        <div>Total Reach</div>
+                                    </div>
+                                    <div class="card card-body text-center">
+                                        <h3 class="mb-0">520,000</h3>
+                                        <div>No. of clicks</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4 class="card-title">New Orders</h4>
+                                    </div>
+                                    <a href="#" class="text-muted"><i class="material-icons align-middle md-18 " data-toggle="tooltip" data-placement="bottom" title="Refresh">sync</i></a>
+                                </div>
+
+                                <ul class="list-group list-group-flush">
+
+                             
+                                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/avatars/james-garcia-76433.jpg" class="img-fluid rounded-circle mr-2" width="30" alt="">
+                                            <div class="media-body lh-1">
+                                                <div>
+                                                    <a href="profile.html">Karen Smith</a>
+                                                    <span>placed a new order </span>
+                                                    <a href="#">$39</a>
+                                                </div>
+                                                <small class="text-muted">35 mins ago</small>
+                                            </div>
+                                        </div>
+                                        <i class="material-icons text-success">check_circle</i>
+                                    </li>
+
+                             
+                                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/avatars/james-garcia-76433.jpg" class="img-fluid rounded-circle mr-2" width="30" alt="">
+                                            <div class="media-body lh-1">
+                                                <div>
+                                                    <a href="profile.html">John Doe</a>
+                                                    <span>placed a new order </span>
+                                                    <a href="#">$39</a>
+                                                </div>
+                                                <small class="text-muted">35 mins ago</small>
+                                            </div>
+                                        </div>
+                                        <i class="material-icons text-success">check_circle</i>
+                                    </li>
+
+                             
+                                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/avatars/james-garcia-76433.jpg" class="img-fluid rounded-circle mr-2" width="30" alt="">
+                                            <div class="media-body lh-1">
+                                                <div>
+                                                    <a href="profile.html">Mike Doe</a>
+                                                    <span>placed a new order </span>
+                                                    <a href="#">$39</a>
+                                                </div>
+                                                <small class="text-muted">35 mins ago</small>
+                                            </div>
+                                        </div>
+                                        <i class="material-icons text-success">check_circle</i>
+                                    </li>
+
+                             
+                                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/avatars/james-garcia-76433.jpg" class="img-fluid rounded-circle mr-2" width="30" alt="">
+                                            <div class="media-body lh-1">
+                                                <div>
+                                                    <a href="profile.html">Jan Doe</a>
+                                                    <span>placed a new order </span>
+                                                    <a href="#">$39</a>
+                                                </div>
+                                                <small class="text-muted">35 mins ago</small>
+                                            </div>
+                                        </div>
+                                        <i class="material-icons text-success">check_circle</i>
+                                    </li>
+
+                             
+                                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <div class="media align-items-center">
+                                            <img src="assets/images/avatars/james-garcia-76433.jpg" class="img-fluid rounded-circle mr-2" width="30" alt="">
+                                            <div class="media-body lh-1">
+                                                <div>
+                                                    <a href="profile.html">Steve Smith</a>
+                                                    <span>placed a new order </span>
+                                                    <a href="#">$39</a>
+                                                </div>
+                                                <small class="text-muted">35 mins ago</small>
+                                            </div>
+                                        </div>
+                                        <i class="material-icons text-success">check_circle</i>
+                                    </li>
+
+                            
+                         
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                    <div class="page-section">
+                        <h2 class="mb-0">Top Performing URLS</h2>
+                    </div>
+                    <div class="card">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col" class="text-center">#</th>
+                                            <th scope="col" class="text-center">URL</th>
+                                            <th scope="col" class="text-center">Platform</th>
+                                            <th scope="col" class="text-center">Traffic</th>
+                                            <th scope="col" class="text-center">Change</th>
+                                            <th scope="col" class="text-center">Content Type</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="align-middle text-center" scope="row">1</th>
+                                            <td class="align-middle text-center">www.jandoe.com/1/product/oil-control</td>
+                                            <td class="align-middle text-center">Facebook, Instagram</td>
+                                            <td class="align-middle text-center">623,129</td>
+                                            <td class="align-middle text-center">+120%</td>
+                                            <td class="align-middle text-center">Video, Post</td>
+                                      
+
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle text-center" scope="row">2</th>
+                                            <td class="align-middle text-center">www.jandoe.com/2/product/oil-control</td>
+                                            <td class="align-middle text-center">Facebook, Twitter</td>
+                                            <td class="align-middle text-center">223,129</td>
+                                            <td class="align-middle text-center">-10%</td>
+                                            <td class="align-middle text-center">Video, Story</td>
+                                      
+
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle text-center" scope="row">3</th>
+                                            <td class="align-middle text-center">www.jandoe.com/3/product/oil-control</td>
+                                            <td class="align-middle text-center">Youtube, Instagram</td>
+                                            <td class="align-middle text-center">323,129</td>
+                                            <td class="align-middle text-center">+74%</td>
+                                            <td class="align-middle text-center">Story, Post</td>
+                                      
+
+                                        </tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="container">
+                    <div class="page-section">
+                        <h2 class="mb-0">Top Performing Products</h2>
+                    </div>
+                    <div class="card">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col" class="text-center">#</th>
+                                            <th scope="col" class="text-center">Products</th>
+                                            <th scope="col" class="text-center">Brand</th>
+                                            <th scope="col" class="text-center">Units Sold</th>
+                                            <th scope="col" class="text-center">Revenue</th>
+                                            <th scope="col" class="text-center">Net Profit</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="align-middle text-center" scope="row">1</th>
+                                            <td class="align-middle text-center">Oil Control</td>
+                                            <td class="align-middle text-center">Terasana</td>
+                                            <td class="align-middle text-center">62</td>
+                                            <td class="align-middle text-center">$1,250</td>
+                                            <td class="align-middle text-center">$450</td>
+                                      
+
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle text-center" scope="row">2</th>
+                                            <td class="align-middle text-center">Skin Mantra</td>
+                                            <td class="align-middle text-center">Terasana</td>
+                                            <td class="align-middle text-center">12</td>
+                                            <td class="align-middle text-center">$750</td>
+                                            <td class="align-middle text-center">$250</td>
+                                      
+
+                                        </tr>
+                                        <tr>
+                                            <th class="align-middle text-center" scope="row">3</th>
+                                            <td class="align-middle text-center">JWT</td>
+                                            <td class="align-middle text-center">Terasana</td>
+                                            <td class="align-middle text-center">102</td>
+                                            <td class="align-middle text-center">$4,250</td>
+                                            <td class="align-middle text-center">$1,250</td>
+                                      
+
+                                        </tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="page-section">
+                    <h2 class="mb-0">Top Performing Posts</h2>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Videos</h4>
+                    </div>
+                    <ul class="row ">
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Reach</div>
+                            <div>
+                                <span class="badge badge-text-color mr-1">1.3m</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Clicks</div>
+                            <div>
+                                <span class="badge badge-text-color mr-1">240,000</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Sales</div>
+                            <div>
+                                <span class="badge badge-success mr-1">$15k</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Stories</h4>
+                    </div>
+                    <ul class="row ">
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Reach</div>
+                            <div>
+                                <span class="badge badge-text-color mr-1">350k</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Clicks</div>
+                            <div>
+                                <span class="badge badge-text-color mr-1">70,000</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Sales</div>
+                            <div>
+                                <span class="badge badge-success mr-1">$5k</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Posts</h4>
+                    </div>
+                    <ul class="row ">
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Reach</div>
+                            <div>
+                                <span class="badge badge-text-color mr-1">2m</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Clicks</div>
+                            <div>
+                                <span class="badge badge-text-color mr-1">440,000</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                        <li
+                            class="
+                            col-md-4
+                            list-group-item
+                                d-flex
+                                align-items-center
+                                justify-content-end
+                            "
+                        >
+                            <div class="mr-auto">Sales</div>
+                            <div>
+                                <span class="badge badge-success mr-1">$30k</span>
+                            </div>
+                            <div class="doughnut-chart-wrapper" style="width: 100px">
+                                <canvas class="stats-chart"></canvas>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- drawer -->
+            <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+                <div class="mdk-drawer__content">
+                    <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
+
+                        <nav class="drawer  drawer--dark">
+                            <div class="drawer-spacer drawer-spacer-border">
+                                <div class="media align-items-center">
+                                    <img src="assets/images/avatars/andrew-robles-300868.jpg" class="img-fluid rounded-circle mr-2" width="40" alt="">
+                                    <div class="media-body" style="line-height: 1.2">
+                                        <a href="profile.html"><strong>Amyris</strong></a>
+                                        <div>Executive Dashboard</div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle dropdown-clear-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">more_vert</i>
+        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="profile.html" class="dropdown-item dropdown-item-action ">View Profile</a>
+                                            <a href="account.html" class="dropdown-item dropdown-item-action ">Edit Account</a>
+                                            <a href="#" class="dropdown-item dropdown-item-action">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                   
+                            <!-- MENU -->
+                            <ul class="drawer-menu" id="mainMenu" >
+                                <li class="drawer-menu-item">
+                                    <a href="create-website.html">
+        <i class="material-icons">add</i>
+        <span class="drawer-menu-text"> Create your website</span>
+      </a>
+                                </li>
+                                <li class="drawer-menu-item">
+                                    <a href="index.html">
+        <i class="material-icons">home</i>
+        <span class="drawer-menu-text"> Dashboard</span>
+      </a>
+                                </li>
+                                <li class="drawer-menu-item">
+                                    <a href="maps.html">
+        <i class="material-icons">view_quilt</i>
+        <span class="drawer-menu-text"> Products</span>
+      </a>
+                                </li>
+                                <li class="drawer-menu-item">
+                                    <a href="maps.html">
+                                        <i class="material-icons">layers</i>
+        <span class="drawer-menu-text">Links</span>
+      </a>
+                                 
+                                </li>
+                                <li class="drawer-menu-item">
+                                    <a href="maps.html">
+                                        <i class="material-icons">insert_chart</i>
+        <span class="drawer-menu-text">Sales</span>
+      </a>
+                                </li>
+                                <li class="drawer-menu-item ">
+                                    <a href="events-calendar.html">
+        <i class="material-icons">event_note</i>
+        <span class="drawer-menu-text">Reports</span>
+      </a>
+                                </li>
+                                <li class="drawer-menu-item ">
+                                    <a href="crm.html">
+        <i class="material-icons">language</i>
+        <span class="drawer-menu-text">CRM - Leads</span>
+      </a>
+                                </li>
+                            </ul>
+                      
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- // END drawer-layout -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Simplebar -->
+    <!-- Used for adding a custom scrollbar to the drawer -->
+    <script src="assets/vendor/simplebar.js"></script>
+
+
+    <script src="assets/vendor/Chart.min.js"></script>
+    <script src="assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/dateformat.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        window.theme = "default";
+    </script>
+    <script src="assets/js/color_variables.js"></script>
+    <script src="assets/js/app.js"></script>
+
+
+    <script src="assets/vendor/dom-factory.js"></script>
+    <!-- DOM Factory -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+    <!-- MDK -->
+
+
+
+    <script>
+        (function() {
+            'use strict';
+
+            // Self Initialize DOM Factory Components
+            domFactory.handler.autoInit()
+
+            // Connect button(s) to drawer(s)
+            var sidebarToggle = Array.prototype.slice.call(document.querySelectorAll('[data-toggle="sidebar"]'))
+
+            sidebarToggle.forEach(function(toggle) {
+                toggle.addEventListener('click', function(e) {
+                    var selector = e.currentTarget.getAttribute('data-target') || '#default-drawer'
+                    var drawer = document.querySelector(selector)
+                    if (drawer) {
+                        drawer.mdkDrawer.toggle()
+                    }
+                })
+            })
+
+
+            window.top.location.hostname !== window.location.hostname && (window.top.location = window.location)
+
+        })();
+    </script>
+
+
+    <script src="assets/js/charts_index.js"></script>
+    <script src="assets/vendor/fullcalendar.min.js"></script>
+    <script src="assets/js/calendars.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+
+
+</body>
+
+</html>
